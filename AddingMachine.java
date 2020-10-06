@@ -1,4 +1,4 @@
-package addMachine;
+//package addMachine;
 
 public class AddingMachine
 {
