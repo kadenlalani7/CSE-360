@@ -2,8 +2,8 @@
 
 public class AddingMachine
 {
-  private int total;
-  private String s = "0";
+  private int total; //
+  private String s = "0"; //running memory
 
   public AddingMachine ()
   {
@@ -12,41 +12,38 @@ public class AddingMachine
 
   public int getTotal ()
   {
-    return total;
+    return total; //returns current total
   }
 
   public void add (int value)
   {
-    total += value;
-    s = s + " + " + value;
+    total += value; //adds value from total
+    s = s + " + " + value; //adds addition and value to running memory
   }
 
   public void subtract (int value)
   {
-    total -= value;
-    s = s + " - " + value;
+    total -= value; //subtracts value from total
+    s = s + " - " + value; //adds subtraction and value to running memory
   }
 
   public String toString ()
   {
-    return s;
+    return s;//returns memory
   }
 
   public void clear()
   {
-    total = 0;
+    total = 0; //resets running total
+    s = "0"; //resets memory
   }
 
   public static void main(String [] args)
   {
-	  AddingMachine machine = new AddingMachine();
-  	  machine.add(3);
-  	  machine.subtract(1);
-  	  machine.add(12);
-  	  machine.subtract(8);
-  	  System.out.println(machine.toString());
-  	  System.out.print(machine.getTotal());
-
+	  AddingMachine calculator = new AddingMachine(); //inititiates an object callced calculator
+  	calculator.add(3);
+  	System.out.print(calculator.getTotal());
   }
 }
-//works on desktop
+//works from desktop
+//works from laptop
