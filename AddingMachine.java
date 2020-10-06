@@ -2,7 +2,7 @@
 
 public class AddingMachine
 {
-  private int total; //
+  private int total; //running total
   private String s = "0"; //running memory
 
   public AddingMachine ()
