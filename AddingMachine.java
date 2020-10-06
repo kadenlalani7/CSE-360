@@ -41,8 +41,8 @@ public class AddingMachine
   public static void main(String [] args)
   {
 	  AddingMachine calculator = new AddingMachine(); //inititiates an object callced calculator
-  	calculator.add(3);
-  	System.out.print(calculator.getTotal());
+  	calculator.add(3); //test addition
+  	System.out.print(calculator.getTotal()); //test running memory
   }
 }
 //works from desktop
